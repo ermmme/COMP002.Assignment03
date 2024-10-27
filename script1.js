@@ -7,3 +7,13 @@
 // ###
 // ##
 // #
+
+const rows = 4;
+let output = "";
+
+for (let i = 1; i <= rows * 2 - 1; i++) {
+  const numHashes = i <= rows ? i : rows * 2 - i;
+  output += "#".repeat(numHashes) + "\n";
+}
+
+console.log(output);
