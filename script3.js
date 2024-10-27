@@ -9,3 +9,13 @@
 //  # # # #
 // # # # #
 //  # # # #
+
+let board = "";
+
+for (let i = 0; i < 64; i++) {
+  board +=
+    (i % 8 === 0 && i !== 0 ? "\n" : "") +
+    ((Math.floor(i / 8) + i) % 2 === 0 ? "#" : " ");
+}
+
+console.log(board);
